@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -46,7 +47,9 @@ namespace phrase_generator
                 outputPhrases.Add(txtPhrase.Text.Replace(txtMask.Text, keyword));
             }
 
-            var currentDir = System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
+
+            var currentDir = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
+
             var writelocation = currentDir + "\\" + txtFileName.Text;
             var exists = File.Exists(writelocation);
 
@@ -58,10 +61,11 @@ namespace phrase_generator
                 int count = 1;
                 while (search)
                 {
-                    if (!File.Exists(filename + "_" + count))
+                    var fileCheck = $"{currentDir}\\{filename}_{count}{Path.GetExtension(txtFileName.Text)}";
+                    if (!File.Exists(fileCheck))
                     {
                         search = false;
-                        writelocation = $"{currentDir}\\{filename}_{count}{Path.GetExtension(txtFileName.Text)}";
+                        writelocation = fileCheck;
                     }
                     count++;
                    
