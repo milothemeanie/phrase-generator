@@ -45,7 +45,7 @@ namespace phrase_generator
             // lblFileName
             // 
             this.lblFileName.AutoSize = true;
-            this.lblFileName.Location = new System.Drawing.Point(223, 39);
+            this.lblFileName.Location = new System.Drawing.Point(144, 46);
             this.lblFileName.Name = "lblFileName";
             this.lblFileName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblFileName.Size = new System.Drawing.Size(60, 15);
@@ -55,7 +55,7 @@ namespace phrase_generator
             // lblPhrase
             // 
             this.lblPhrase.AutoSize = true;
-            this.lblPhrase.Location = new System.Drawing.Point(223, 141);
+            this.lblPhrase.Location = new System.Drawing.Point(144, 148);
             this.lblPhrase.Name = "lblPhrase";
             this.lblPhrase.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPhrase.Size = new System.Drawing.Size(42, 15);
@@ -65,7 +65,7 @@ namespace phrase_generator
             // lblKeyword
             // 
             this.lblKeyword.AutoSize = true;
-            this.lblKeyword.Location = new System.Drawing.Point(223, 199);
+            this.lblKeyword.Location = new System.Drawing.Point(144, 325);
             this.lblKeyword.Name = "lblKeyword";
             this.lblKeyword.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblKeyword.Size = new System.Drawing.Size(58, 15);
@@ -74,24 +74,24 @@ namespace phrase_generator
             // 
             // txtFileName
             // 
-            this.txtFileName.Location = new System.Drawing.Point(223, 57);
+            this.txtFileName.Location = new System.Drawing.Point(144, 64);
             this.txtFileName.Name = "txtFileName";
-            this.txtFileName.Size = new System.Drawing.Size(190, 23);
+            this.txtFileName.Size = new System.Drawing.Size(361, 23);
             this.txtFileName.TabIndex = 0;
             this.txtFileName.Text = "output.txt";
             // 
             // txtMask
             // 
-            this.txtMask.Location = new System.Drawing.Point(223, 109);
+            this.txtMask.Location = new System.Drawing.Point(144, 116);
             this.txtMask.Name = "txtMask";
-            this.txtMask.Size = new System.Drawing.Size(190, 23);
+            this.txtMask.Size = new System.Drawing.Size(361, 23);
             this.txtMask.TabIndex = 2;
             this.txtMask.Text = "[KEYWORD]";
             // 
             // lblMask
             // 
             this.lblMask.AutoSize = true;
-            this.lblMask.Location = new System.Drawing.Point(223, 91);
+            this.lblMask.Location = new System.Drawing.Point(144, 98);
             this.lblMask.Name = "lblMask";
             this.lblMask.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblMask.Size = new System.Drawing.Size(35, 15);
@@ -101,16 +101,17 @@ namespace phrase_generator
             // txtKeyword
             // 
             this.txtKeyword.AcceptsReturn = true;
-            this.txtKeyword.Location = new System.Drawing.Point(223, 217);
+            this.txtKeyword.Location = new System.Drawing.Point(144, 343);
             this.txtKeyword.Multiline = true;
             this.txtKeyword.Name = "txtKeyword";
-            this.txtKeyword.Size = new System.Drawing.Size(190, 175);
+            this.txtKeyword.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtKeyword.Size = new System.Drawing.Size(361, 175);
             this.txtKeyword.TabIndex = 4;
             this.txtKeyword.WordWrap = false;
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(222, 437);
+            this.btnCreate.Location = new System.Drawing.Point(212, 554);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(191, 43);
             this.btnCreate.TabIndex = 5;
@@ -122,7 +123,7 @@ namespace phrase_generator
             // 
             this.lblMessage.AutoSize = true;
             this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMessage.Location = new System.Drawing.Point(72, 519);
+            this.lblMessage.Location = new System.Drawing.Point(46, 626);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Size = new System.Drawing.Size(36, 17);
             this.lblMessage.TabIndex = 6;
@@ -131,16 +132,19 @@ namespace phrase_generator
             // 
             // txtPhrase
             // 
-            this.txtPhrase.Location = new System.Drawing.Point(223, 159);
+            this.txtPhrase.AcceptsReturn = true;
+            this.txtPhrase.Location = new System.Drawing.Point(144, 166);
+            this.txtPhrase.Multiline = true;
             this.txtPhrase.Name = "txtPhrase";
-            this.txtPhrase.Size = new System.Drawing.Size(190, 23);
+            this.txtPhrase.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtPhrase.Size = new System.Drawing.Size(361, 135);
             this.txtPhrase.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 597);
+            this.ClientSize = new System.Drawing.Size(649, 675);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.txtKeyword);
